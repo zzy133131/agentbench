@@ -1,0 +1,32 @@
+[
+    {
+        "id": "custom-001",
+        "name": "Company trivia",
+        "description": "Test basic knowledge about the company",
+        "prompt": "In what year was the company founded?",
+        "reference": "2020",
+        "scoring": "exact_match",
+        "tags": ["custom", "company"],
+        "max_score": 1.0
+    },
+    {
+        "id": "custom-002",
+        "name": "Product description",
+        "description": "Describe the main product feature",
+        "prompt": "What is the main feature of our product?",
+        "reference": "AI-powered analytics",
+        "scoring": "contains",
+        "tags": ["custom", "product"],
+        "max_score": 2.0
+    },
+    {
+        "id": "custom-003",
+        "name": "Sentiment analysis",
+        "description": "Analyze sentiment of customer feedback",
+        "prompt": "Analyze the sentiment of this review: 'The product is amazing, but customer support was slow to respond.'",
+        "scoring": "llm_judge",
+        "rubric": "The response should correctly identify both positive and negative aspects of the review.",
+        "tags": ["custom", "nlp"],
+        "max_score": 3.0
+    }
+]
